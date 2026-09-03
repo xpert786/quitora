@@ -1,0 +1,230 @@
+###### Class q4.p (q4.p)
+.class public final Lq4/p;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field public final a:Li6/a;
+
+.field public final b:Li6/a;
+
+.field public final c:Li6/a;
+
+.field public final d:Li6/a;
+
+.field public final e:Li6/a;
+
+
+# direct methods
+.method public constructor <init>(Li6/a;Li6/a;Li6/a;Li6/a;Li6/a;)V
+    .registers 6
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lq4/p;->a:Li6/a;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Lq4/p;->b:Li6/a;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, Lq4/p;->c:Li6/a;
+
+    .line 9
+    .line 10
+    iput-object p4, p0, Lq4/p;->d:Li6/a;
+
+    .line 11
+    .line 12
+    iput-object p5, p0, Lq4/p;->e:Li6/a;
+
+    .line 13
+    .line 14
+    return-void
+.end method
+
+.method public static a(Li6/a;Li6/a;Li6/a;Li6/a;Li6/a;)Lq4/p;
+    .registers 11
+
+    .line 1
+    new-instance v0, Lq4/p;
+
+    .line 2
+    .line 3
+    move-object v1, p0
+
+    .line 4
+    move-object v2, p1
+
+    .line 5
+    move-object v3, p2
+
+    .line 6
+    move-object v4, p3
+
+    .line 7
+    move-object v5, p4
+
+    .line 8
+    invoke-direct/range {v0 .. v5}, Lq4/p;-><init>(Li6/a;Li6/a;Li6/a;Li6/a;Li6/a;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object v0
+.end method
+
+.method public static c(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Lq4/a;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;)Lq4/n;
+    .registers 13
+
+    .line 1
+    new-instance v0, Lq4/n;
+
+    .line 2
+    .line 3
+    move-object v1, p0
+
+    .line 4
+    move-object v2, p1
+
+    .line 5
+    move-object v3, p2
+
+    .line 6
+    move-object v4, p3
+
+    .line 7
+    move-object v5, p4
+
+    .line 8
+    move-object v6, p5
+
+    .line 9
+    invoke-direct/range {v0 .. v6}, Lq4/n;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Lq4/a;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public b(Ljava/lang/String;)Lq4/n;
+    .registers 9
+
+    .line 1
+    iget-object v0, p0, Lq4/p;->a:Li6/a;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Li6/a;->get()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    move-object v1, v0
+
+    .line 8
+    check-cast v1, Landroid/content/Context;
+
+    .line 9
+    .line 10
+    iget-object v0, p0, Lq4/p;->b:Li6/a;
+
+    .line 11
+    .line 12
+    invoke-interface {v0}, Li6/a;->get()Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
+    move-object v2, v0
+
+    .line 17
+    check-cast v2, Ljava/lang/String;
+
+    .line 18
+    .line 19
+    iget-object v0, p0, Lq4/p;->c:Li6/a;
+
+    .line 20
+    .line 21
+    invoke-interface {v0}, Li6/a;->get()Ljava/lang/Object;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v0
+
+    .line 25
+    move-object v4, v0
+
+    .line 26
+    check-cast v4, Lq4/a;
+
+    .line 27
+    .line 28
+    iget-object v0, p0, Lq4/p;->d:Li6/a;
+
+    .line 29
+    .line 30
+    invoke-interface {v0}, Li6/a;->get()Ljava/lang/Object;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v0
+
+    .line 34
+    move-object v5, v0
+
+    .line 35
+    check-cast v5, Ljava/util/concurrent/Executor;
+
+    .line 36
+    .line 37
+    iget-object v0, p0, Lq4/p;->e:Li6/a;
+
+    .line 38
+    .line 39
+    invoke-interface {v0}, Li6/a;->get()Ljava/lang/Object;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object v0
+
+    .line 43
+    move-object v6, v0
+
+    .line 44
+    check-cast v6, Ljava/util/concurrent/Executor;
+
+    .line 45
+    .line 46
+    move-object v3, p1
+
+    .line 47
+    invoke-static/range {v1 .. v6}, Lq4/p;->c(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Lq4/a;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;)Lq4/n;
+
+    .line 48
+    .line 49
+    .line 50
+    move-result-object p1
+
+    .line 51
+    return-object p1
+.end method

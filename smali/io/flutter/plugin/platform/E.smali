@@ -1,0 +1,17 @@
+###### Class io.flutter.plugin.platform.E (io.flutter.plugin.platform.E)
+.class public abstract synthetic Lio/flutter/plugin/platform/E;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# direct methods
+.method public static bridge synthetic a(Landroid/view/SurfaceControl$Builder;Ljava/lang/String;)Landroid/view/SurfaceControl$Builder;
+    .registers 2
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/view/SurfaceControl$Builder;->setName(Ljava/lang/String;)Landroid/view/SurfaceControl$Builder;
+
+    move-result-object p0
+
+    return-object p0
+.end method

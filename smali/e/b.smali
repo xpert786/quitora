@@ -1,0 +1,9 @@
+###### Class e.InterfaceC1657b (e.b)
+.class public interface abstract Le/b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract a(Ljava/lang/Object;)V
+.end method

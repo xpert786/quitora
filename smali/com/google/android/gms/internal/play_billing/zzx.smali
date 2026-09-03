@@ -1,0 +1,12 @@
+###### Class com.google.android.gms.internal.play_billing.zzx (com.google.android.gms.internal.play_billing.zzx)
+.class public interface abstract Lcom/google/android/gms/internal/play_billing/zzx;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/os/IInterface;
+
+
+# virtual methods
+.method public abstract zza(Landroid/os/Bundle;)V
+.end method

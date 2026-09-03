@@ -1,0 +1,15 @@
+###### Class s1.AbstractC2582g (s1.g)
+.class public abstract synthetic Ls1/g;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# direct methods
+.method public static synthetic a()V
+    .registers 1
+
+    .line 1
+    new-instance v0, Landroid/app/NotificationChannel;
+
+    return-void
+.end method

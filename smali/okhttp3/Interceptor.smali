@@ -1,0 +1,50 @@
+###### Class okhttp3.Interceptor (okhttp3.Interceptor)
+.class public interface abstract Lokhttp3/Interceptor;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lokhttp3/Interceptor$Chain;
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract a(Lokhttp3/Interceptor$Chain;)Lokhttp3/Response;
+.end method
+
+###### Class okhttp3.Interceptor.Chain (okhttp3.Interceptor$Chain)
+.class public interface abstract Lokhttp3/Interceptor$Chain;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lokhttp3/Interceptor;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "Chain"
+.end annotation
+
+
+# virtual methods
+.method public abstract a()I
+.end method
+
+.method public abstract b()I
+.end method
+
+.method public abstract c(Lokhttp3/Request;)Lokhttp3/Response;
+.end method
+
+.method public abstract d()I
+.end method
+
+.method public abstract i()Lokhttp3/Request;
+.end method

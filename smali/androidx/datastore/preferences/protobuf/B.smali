@@ -1,0 +1,948 @@
+###### Class androidx.datastore.preferences.protobuf.B (androidx.datastore.preferences.protobuf.B)
+.class public final Landroidx/datastore/preferences/protobuf/B;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroidx/datastore/preferences/protobuf/Z;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/datastore/preferences/protobuf/B$c;
+    }
+.end annotation
+
+
+# static fields
+.field public static final b:Landroidx/datastore/preferences/protobuf/I;
+
+
+# instance fields
+.field public final a:Landroidx/datastore/preferences/protobuf/I;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 1
+
+    .line 1
+    new-instance v0, Landroidx/datastore/preferences/protobuf/B$a;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Landroidx/datastore/preferences/protobuf/B$a;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Landroidx/datastore/preferences/protobuf/B;->b:Landroidx/datastore/preferences/protobuf/I;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .registers 2
+
+    .line 1
+    invoke-static {}, Landroidx/datastore/preferences/protobuf/B;->c()Landroidx/datastore/preferences/protobuf/I;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Landroidx/datastore/preferences/protobuf/B;-><init>(Landroidx/datastore/preferences/protobuf/I;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroidx/datastore/preferences/protobuf/I;)V
+    .registers 3
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    const-string v0, "messageInfoFactory"
+
+    invoke-static {p1, v0}, Landroidx/datastore/preferences/protobuf/u;->b(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Landroidx/datastore/preferences/protobuf/I;
+
+    iput-object p1, p0, Landroidx/datastore/preferences/protobuf/B;->a:Landroidx/datastore/preferences/protobuf/I;
+
+    return-void
+.end method
+
+.method public static b(Landroidx/datastore/preferences/protobuf/H;)Z
+    .registers 2
+
+    .line 1
+    sget-object v0, Landroidx/datastore/preferences/protobuf/B$b;->a:[I
+
+    .line 2
+    .line 3
+    invoke-interface {p0}, Landroidx/datastore/preferences/protobuf/H;->c()Landroidx/datastore/preferences/protobuf/T;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p0
+
+    .line 11
+    aget p0, v0, p0
+
+    .line 12
+    .line 13
+    const/4 v0, 0x1
+
+    .line 14
+    if-eq p0, v0, :cond_10
+
+    .line 15
+    .line 16
+    return v0
+
+    .line 17
+    :cond_10
+    const/4 p0, 0x0
+
+    .line 18
+    return p0
+.end method
+
+.method public static c()Landroidx/datastore/preferences/protobuf/I;
+    .registers 5
+
+    .line 1
+    new-instance v0, Landroidx/datastore/preferences/protobuf/B$c;
+
+    .line 2
+    .line 3
+    invoke-static {}, Landroidx/datastore/preferences/protobuf/s;->c()Landroidx/datastore/preferences/protobuf/s;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v1
+
+    .line 7
+    invoke-static {}, Landroidx/datastore/preferences/protobuf/B;->d()Landroidx/datastore/preferences/protobuf/I;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v2
+
+    .line 11
+    const/4 v3, 0x2
+
+    .line 12
+    new-array v3, v3, [Landroidx/datastore/preferences/protobuf/I;
+
+    .line 13
+    .line 14
+    const/4 v4, 0x0
+
+    .line 15
+    aput-object v1, v3, v4
+
+    .line 16
+    .line 17
+    const/4 v1, 0x1
+
+    .line 18
+    aput-object v2, v3, v1
+
+    .line 19
+    .line 20
+    invoke-direct {v0, v3}, Landroidx/datastore/preferences/protobuf/B$c;-><init>([Landroidx/datastore/preferences/protobuf/I;)V
+
+    .line 21
+    .line 22
+    .line 23
+    return-object v0
+.end method
+
+.method public static d()Landroidx/datastore/preferences/protobuf/I;
+    .registers 4
+
+    .line 1
+    sget-boolean v0, Landroidx/datastore/preferences/protobuf/U;->d:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_7
+
+    .line 4
+    .line 5
+    sget-object v0, Landroidx/datastore/preferences/protobuf/B;->b:Landroidx/datastore/preferences/protobuf/I;
+
+    .line 6
+    .line 7
+    return-object v0
+
+    .line 8
+    :cond_7
+    :try_start_7
+    const-string v0, "androidx.datastore.preferences.protobuf.DescriptorMessageInfoFactory"
+
+    .line 9
+    .line 10
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    const-string v1, "getInstance"
+
+    .line 15
+    .line 16
+    const/4 v2, 0x0
+
+    .line 17
+    new-array v3, v2, [Ljava/lang/Class;
+
+    .line 18
+    .line 19
+    invoke-virtual {v0, v1, v3}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v0
+
+    .line 23
+    new-array v1, v2, [Ljava/lang/Object;
+
+    .line 24
+    .line 25
+    const/4 v2, 0x0
+
+    .line 26
+    invoke-virtual {v0, v2, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v0
+
+    .line 30
+    check-cast v0, Landroidx/datastore/preferences/protobuf/I;
+    :try_end_1f
+    .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_1f} :catch_20
+
+    .line 31
+    .line 32
+    return-object v0
+
+    .line 33
+    :catch_20
+    sget-object v0, Landroidx/datastore/preferences/protobuf/B;->b:Landroidx/datastore/preferences/protobuf/I;
+
+    .line 34
+    .line 35
+    return-object v0
+.end method
+
+.method public static e(Ljava/lang/Class;Landroidx/datastore/preferences/protobuf/H;)Landroidx/datastore/preferences/protobuf/Y;
+    .registers 11
+
+    .line 1
+    invoke-static {p0}, Landroidx/datastore/preferences/protobuf/B;->f(Ljava/lang/Class;)Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    const/4 v1, 0x0
+
+    .line 6
+    if-eqz v0, :cond_29
+
+    .line 7
+    .line 8
+    invoke-static {}, Landroidx/datastore/preferences/protobuf/Q;->b()Landroidx/datastore/preferences/protobuf/O;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v4
+
+    .line 12
+    invoke-static {}, Landroidx/datastore/preferences/protobuf/A;->b()Landroidx/datastore/preferences/protobuf/y;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v5
+
+    .line 16
+    invoke-static {}, Landroidx/datastore/preferences/protobuf/a0;->K()Landroidx/datastore/preferences/protobuf/f0;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v6
+
+    .line 20
+    invoke-static {p1}, Landroidx/datastore/preferences/protobuf/B;->b(Landroidx/datastore/preferences/protobuf/H;)Z
+
+    .line 21
+    .line 22
+    .line 23
+    move-result v0
+
+    .line 24
+    if-eqz v0, :cond_1d
+
+    .line 25
+    .line 26
+    invoke-static {}, Landroidx/datastore/preferences/protobuf/p;->b()Landroidx/datastore/preferences/protobuf/n;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v1
+
+    .line 30
+    :cond_1d
+    move-object v7, v1
+
+    .line 31
+    invoke-static {}, Landroidx/datastore/preferences/protobuf/G;->b()Landroidx/datastore/preferences/protobuf/E;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v8
+
+    .line 35
+    move-object v2, p0
+
+    .line 36
+    move-object v3, p1
+
+    .line 37
+    invoke-static/range {v2 .. v8}, Landroidx/datastore/preferences/protobuf/M;->N(Ljava/lang/Class;Landroidx/datastore/preferences/protobuf/H;Landroidx/datastore/preferences/protobuf/O;Landroidx/datastore/preferences/protobuf/y;Landroidx/datastore/preferences/protobuf/f0;Landroidx/datastore/preferences/protobuf/n;Landroidx/datastore/preferences/protobuf/E;)Landroidx/datastore/preferences/protobuf/M;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object p0
+
+    .line 41
+    return-object p0
+
+    .line 42
+    :cond_29
+    move-object v0, p0
+
+    .line 43
+    move-object v3, p1
+
+    .line 44
+    invoke-static {}, Landroidx/datastore/preferences/protobuf/Q;->a()Landroidx/datastore/preferences/protobuf/O;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object v2
+
+    .line 48
+    move-object p0, v1
+
+    .line 49
+    move-object v1, v3
+
+    .line 50
+    invoke-static {}, Landroidx/datastore/preferences/protobuf/A;->a()Landroidx/datastore/preferences/protobuf/y;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object v3
+
+    .line 54
+    invoke-static {}, Landroidx/datastore/preferences/protobuf/a0;->J()Landroidx/datastore/preferences/protobuf/f0;
+
+    .line 55
+    .line 56
+    .line 57
+    move-result-object v4
+
+    .line 58
+    invoke-static {v1}, Landroidx/datastore/preferences/protobuf/B;->b(Landroidx/datastore/preferences/protobuf/H;)Z
+
+    .line 59
+    .line 60
+    .line 61
+    move-result p1
+
+    .line 62
+    if-eqz p1, :cond_43
+
+    .line 63
+    .line 64
+    invoke-static {}, Landroidx/datastore/preferences/protobuf/p;->a()Landroidx/datastore/preferences/protobuf/n;
+
+    .line 65
+    .line 66
+    .line 67
+    move-result-object p0
+
+    .line 68
+    :cond_43
+    move-object v5, p0
+
+    .line 69
+    invoke-static {}, Landroidx/datastore/preferences/protobuf/G;->a()Landroidx/datastore/preferences/protobuf/E;
+
+    .line 70
+    .line 71
+    .line 72
+    move-result-object v6
+
+    .line 73
+    invoke-static/range {v0 .. v6}, Landroidx/datastore/preferences/protobuf/M;->N(Ljava/lang/Class;Landroidx/datastore/preferences/protobuf/H;Landroidx/datastore/preferences/protobuf/O;Landroidx/datastore/preferences/protobuf/y;Landroidx/datastore/preferences/protobuf/f0;Landroidx/datastore/preferences/protobuf/n;Landroidx/datastore/preferences/protobuf/E;)Landroidx/datastore/preferences/protobuf/M;
+
+    .line 74
+    .line 75
+    .line 76
+    move-result-object p0
+
+    .line 77
+    return-object p0
+.end method
+
+.method public static f(Ljava/lang/Class;)Z
+    .registers 2
+
+    .line 1
+    sget-boolean v0, Landroidx/datastore/preferences/protobuf/U;->d:Z
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_f
+
+    .line 4
+    .line 5
+    const-class v0, Landroidx/datastore/preferences/protobuf/t;
+
+    .line 6
+    .line 7
+    invoke-virtual {v0, p0}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p0
+
+    .line 11
+    if-eqz p0, :cond_d
+
+    .line 12
+    .line 13
+    goto :goto_f
+
+    .line 14
+    :cond_d
+    const/4 p0, 0x0
+
+    .line 15
+    return p0
+
+    .line 16
+    :cond_f
+    :goto_f
+    const/4 p0, 0x1
+
+    .line 17
+    return p0
+.end method
+
+
+# virtual methods
+.method public a(Ljava/lang/Class;)Landroidx/datastore/preferences/protobuf/Y;
+    .registers 4
+
+    .line 1
+    invoke-static {p1}, Landroidx/datastore/preferences/protobuf/a0;->G(Ljava/lang/Class;)V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Landroidx/datastore/preferences/protobuf/B;->a:Landroidx/datastore/preferences/protobuf/I;
+
+    .line 5
+    .line 6
+    invoke-interface {v0, p1}, Landroidx/datastore/preferences/protobuf/I;->a(Ljava/lang/Class;)Landroidx/datastore/preferences/protobuf/H;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v0
+
+    .line 10
+    invoke-interface {v0}, Landroidx/datastore/preferences/protobuf/H;->a()Z
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v1
+
+    .line 14
+    if-eqz v1, :cond_37
+
+    .line 15
+    .line 16
+    invoke-static {p1}, Landroidx/datastore/preferences/protobuf/B;->f(Ljava/lang/Class;)Z
+
+    .line 17
+    .line 18
+    .line 19
+    move-result p1
+
+    .line 20
+    if-eqz p1, :cond_26
+
+    .line 21
+    .line 22
+    invoke-static {}, Landroidx/datastore/preferences/protobuf/a0;->K()Landroidx/datastore/preferences/protobuf/f0;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p1
+
+    .line 26
+    invoke-static {}, Landroidx/datastore/preferences/protobuf/p;->b()Landroidx/datastore/preferences/protobuf/n;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v1
+
+    .line 30
+    invoke-interface {v0}, Landroidx/datastore/preferences/protobuf/H;->b()Landroidx/datastore/preferences/protobuf/J;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v0
+
+    .line 34
+    invoke-static {p1, v1, v0}, Landroidx/datastore/preferences/protobuf/N;->l(Landroidx/datastore/preferences/protobuf/f0;Landroidx/datastore/preferences/protobuf/n;Landroidx/datastore/preferences/protobuf/J;)Landroidx/datastore/preferences/protobuf/N;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object p1
+
+    .line 38
+    return-object p1
+
+    .line 39
+    :cond_26
+    invoke-static {}, Landroidx/datastore/preferences/protobuf/a0;->J()Landroidx/datastore/preferences/protobuf/f0;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object p1
+
+    .line 43
+    invoke-static {}, Landroidx/datastore/preferences/protobuf/p;->a()Landroidx/datastore/preferences/protobuf/n;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object v1
+
+    .line 47
+    invoke-interface {v0}, Landroidx/datastore/preferences/protobuf/H;->b()Landroidx/datastore/preferences/protobuf/J;
+
+    .line 48
+    .line 49
+    .line 50
+    move-result-object v0
+
+    .line 51
+    invoke-static {p1, v1, v0}, Landroidx/datastore/preferences/protobuf/N;->l(Landroidx/datastore/preferences/protobuf/f0;Landroidx/datastore/preferences/protobuf/n;Landroidx/datastore/preferences/protobuf/J;)Landroidx/datastore/preferences/protobuf/N;
+
+    .line 52
+    .line 53
+    .line 54
+    move-result-object p1
+
+    .line 55
+    return-object p1
+
+    .line 56
+    :cond_37
+    invoke-static {p1, v0}, Landroidx/datastore/preferences/protobuf/B;->e(Ljava/lang/Class;Landroidx/datastore/preferences/protobuf/H;)Landroidx/datastore/preferences/protobuf/Y;
+
+    .line 57
+    .line 58
+    .line 59
+    move-result-object p1
+
+    .line 60
+    return-object p1
+.end method
+
+###### Class androidx.datastore.preferences.protobuf.B.a (androidx.datastore.preferences.protobuf.B$a)
+.class public Landroidx/datastore/preferences/protobuf/B$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroidx/datastore/preferences/protobuf/I;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/datastore/preferences/protobuf/B;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Ljava/lang/Class;)Landroidx/datastore/preferences/protobuf/H;
+    .registers 3
+
+    .line 1
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 2
+    .line 3
+    const-string v0, "This should never be called."
+
+    .line 4
+    .line 5
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p1
+.end method
+
+.method public b(Ljava/lang/Class;)Z
+    .registers 2
+
+    .line 1
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+###### Class androidx.datastore.preferences.protobuf.B.b (androidx.datastore.preferences.protobuf.B$b)
+.class public abstract synthetic Landroidx/datastore/preferences/protobuf/B$b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/datastore/preferences/protobuf/B;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1009
+    name = null
+.end annotation
+
+
+# static fields
+.field public static final synthetic a:[I
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 3
+
+    .line 1
+    invoke-static {}, Landroidx/datastore/preferences/protobuf/T;->values()[Landroidx/datastore/preferences/protobuf/T;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    array-length v0, v0
+
+    .line 6
+    new-array v0, v0, [I
+
+    .line 7
+    .line 8
+    sput-object v0, Landroidx/datastore/preferences/protobuf/B$b;->a:[I
+
+    .line 9
+    .line 10
+    :try_start_9
+    sget-object v1, Landroidx/datastore/preferences/protobuf/T;->b:Landroidx/datastore/preferences/protobuf/T;
+
+    .line 11
+    .line 12
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v1
+
+    .line 16
+    const/4 v2, 0x1
+
+    .line 17
+    aput v2, v0, v1
+    :try_end_12
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_12} :catch_12
+
+    .line 18
+    .line 19
+    :catch_12
+    return-void
+.end method
+
+###### Class androidx.datastore.preferences.protobuf.B.c (androidx.datastore.preferences.protobuf.B$c)
+.class public Landroidx/datastore/preferences/protobuf/B$c;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroidx/datastore/preferences/protobuf/I;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/datastore/preferences/protobuf/B;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "c"
+.end annotation
+
+
+# instance fields
+.field public a:[Landroidx/datastore/preferences/protobuf/I;
+
+
+# direct methods
+.method public varargs constructor <init>([Landroidx/datastore/preferences/protobuf/I;)V
+    .registers 2
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Landroidx/datastore/preferences/protobuf/B$c;->a:[Landroidx/datastore/preferences/protobuf/I;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Ljava/lang/Class;)Landroidx/datastore/preferences/protobuf/H;
+    .registers 7
+
+    .line 1
+    iget-object v0, p0, Landroidx/datastore/preferences/protobuf/B$c;->a:[Landroidx/datastore/preferences/protobuf/I;
+
+    .line 2
+    .line 3
+    array-length v1, v0
+
+    .line 4
+    const/4 v2, 0x0
+
+    .line 5
+    :goto_4
+    if-ge v2, v1, :cond_16
+
+    .line 6
+    .line 7
+    aget-object v3, v0, v2
+
+    .line 8
+    .line 9
+    invoke-interface {v3, p1}, Landroidx/datastore/preferences/protobuf/I;->b(Ljava/lang/Class;)Z
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v4
+
+    .line 13
+    if-eqz v4, :cond_13
+
+    .line 14
+    .line 15
+    invoke-interface {v3, p1}, Landroidx/datastore/preferences/protobuf/I;->a(Ljava/lang/Class;)Landroidx/datastore/preferences/protobuf/H;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p1
+
+    .line 19
+    return-object p1
+
+    .line 20
+    :cond_13
+    add-int/lit8 v2, v2, 0x1
+
+    .line 21
+    .line 22
+    goto :goto_4
+
+    .line 23
+    :cond_16
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
+
+    .line 24
+    .line 25
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 28
+    .line 29
+    .line 30
+    const-string v2, "No factory is available for message type: "
+
+    .line 31
+    .line 32
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 33
+    .line 34
+    .line 35
+    invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object p1
+
+    .line 39
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 40
+    .line 41
+    .line 42
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object p1
+
+    .line 46
+    invoke-direct {v0, p1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    .line 47
+    .line 48
+    .line 49
+    throw v0
+.end method
+
+.method public b(Ljava/lang/Class;)Z
+    .registers 7
+
+    .line 1
+    iget-object v0, p0, Landroidx/datastore/preferences/protobuf/B$c;->a:[Landroidx/datastore/preferences/protobuf/I;
+
+    .line 2
+    .line 3
+    array-length v1, v0
+
+    .line 4
+    const/4 v2, 0x0
+
+    .line 5
+    move v3, v2
+
+    .line 6
+    :goto_5
+    if-ge v3, v1, :cond_14
+
+    .line 7
+    .line 8
+    aget-object v4, v0, v3
+
+    .line 9
+    .line 10
+    invoke-interface {v4, p1}, Landroidx/datastore/preferences/protobuf/I;->b(Ljava/lang/Class;)Z
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v4
+
+    .line 14
+    if-eqz v4, :cond_11
+
+    .line 15
+    .line 16
+    const/4 p1, 0x1
+
+    .line 17
+    return p1
+
+    .line 18
+    :cond_11
+    add-int/lit8 v3, v3, 0x1
+
+    .line 19
+    .line 20
+    goto :goto_5
+
+    .line 21
+    :cond_14
+    return v2
+.end method

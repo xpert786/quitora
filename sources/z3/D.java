@@ -1,0 +1,9 @@
+package z3;
+
+import android.os.Bundle;
+import android.os.IInterface;
+
+/* JADX INFO: loaded from: classes.dex */
+public interface D extends IInterface {
+    void b(Bundle bundle);
+}

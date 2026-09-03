@@ -1,0 +1,114 @@
+###### Class Y1.o (Y1.o)
+.class public final LY1/o;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field public final a:I
+
+.field public final b:I
+
+.field public final c:J
+
+.field public final d:J
+
+.field public final e:J
+
+.field public final f:LL1/y0;
+
+.field public final g:I
+
+.field public final h:[J
+
+.field public final i:[J
+
+.field public final j:I
+
+.field public final k:[LY1/p;
+
+
+# direct methods
+.method public constructor <init>(IIJJJLL1/y0;I[LY1/p;I[J[J)V
+    .registers 15
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput p1, p0, LY1/o;->a:I
+
+    .line 5
+    .line 6
+    iput p2, p0, LY1/o;->b:I
+
+    .line 7
+    .line 8
+    iput-wide p3, p0, LY1/o;->c:J
+
+    .line 9
+    .line 10
+    iput-wide p5, p0, LY1/o;->d:J
+
+    .line 11
+    .line 12
+    iput-wide p7, p0, LY1/o;->e:J
+
+    .line 13
+    .line 14
+    iput-object p9, p0, LY1/o;->f:LL1/y0;
+
+    .line 15
+    .line 16
+    iput p10, p0, LY1/o;->g:I
+
+    .line 17
+    .line 18
+    iput-object p11, p0, LY1/o;->k:[LY1/p;
+
+    .line 19
+    .line 20
+    iput p12, p0, LY1/o;->j:I
+
+    .line 21
+    .line 22
+    iput-object p13, p0, LY1/o;->h:[J
+
+    .line 23
+    .line 24
+    iput-object p14, p0, LY1/o;->i:[J
+
+    .line 25
+    .line 26
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(I)LY1/p;
+    .registers 3
+
+    .line 1
+    iget-object v0, p0, LY1/o;->k:[LY1/p;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_6
+
+    .line 4
+    .line 5
+    const/4 p1, 0x0
+
+    .line 6
+    return-object p1
+
+    .line 7
+    :cond_6
+    aget-object p1, v0, p1
+
+    .line 8
+    .line 9
+    return-object p1
+.end method

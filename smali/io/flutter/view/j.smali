@@ -1,0 +1,17 @@
+###### Class io.flutter.view.j (io.flutter.view.j)
+.class public abstract synthetic Lio/flutter/view/j;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# direct methods
+.method public static bridge synthetic a(Landroid/view/accessibility/AccessibilityNodeInfo;)Ljava/util/List;
+    .registers 1
+
+    .line 1
+    invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityNodeInfo;->getAvailableExtraData()Ljava/util/List;
+
+    move-result-object p0
+
+    return-object p0
+.end method

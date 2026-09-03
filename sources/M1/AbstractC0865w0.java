@@ -1,0 +1,6 @@
+package M1;
+
+/* JADX INFO: renamed from: M1.w0, reason: case insensitive filesystem */
+/* JADX INFO: loaded from: classes.dex */
+public abstract /* synthetic */ class AbstractC0865w0 {
+}

@@ -1,0 +1,12 @@
+###### Class com.revenuecat.purchases.interfaces.PurchaseCallback (com.revenuecat.purchases.interfaces.PurchaseCallback)
+.class public interface abstract Lcom/revenuecat/purchases/interfaces/PurchaseCallback;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/revenuecat/purchases/interfaces/PurchaseErrorCallback;
+
+
+# virtual methods
+.method public abstract onCompleted(Lcom/revenuecat/purchases/models/StoreTransaction;Lcom/revenuecat/purchases/CustomerInfo;)V
+.end method

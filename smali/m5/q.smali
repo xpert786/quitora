@@ -1,0 +1,74 @@
+###### Class m5.q (m5.q)
+.class public abstract Lm5/q;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# direct methods
+.method public static a(LC5/i;)Ljava/lang/Integer;
+    .registers 2
+
+    .line 1
+    const-string v0, "logLevel"
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, v0}, LC5/i;->a(Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Ljava/lang/Integer;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static b(I)Z
+    .registers 2
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-lt p0, v0, :cond_4
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_4
+    const/4 p0, 0x0
+
+    .line 6
+    return p0
+.end method
+
+.method public static c(I)Z
+    .registers 2
+
+    .line 1
+    const/4 v0, 0x2
+
+    .line 2
+    if-lt p0, v0, :cond_5
+
+    .line 3
+    .line 4
+    const/4 p0, 0x1
+
+    .line 5
+    return p0
+
+    .line 6
+    :cond_5
+    const/4 p0, 0x0
+
+    .line 7
+    return p0
+.end method

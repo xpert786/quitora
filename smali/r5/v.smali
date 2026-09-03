@@ -1,0 +1,17 @@
+###### Class r5.v (r5.v)
+.class public abstract synthetic Lr5/v;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# direct methods
+.method public static bridge synthetic a(Landroid/view/textservice/TextServicesManager;)Z
+    .registers 1
+
+    .line 1
+    invoke-virtual {p0}, Landroid/view/textservice/TextServicesManager;->isSpellCheckerEnabled()Z
+
+    move-result p0
+
+    return p0
+.end method

@@ -1,0 +1,15 @@
+###### Class Y0.i (Y0.i)
+.class public abstract synthetic LY0/i;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# direct methods
+.method public static bridge synthetic a(Landroid/graphics/ImageDecoder;II)V
+    .registers 3
+
+    .line 1
+    invoke-virtual {p0, p1, p2}, Landroid/graphics/ImageDecoder;->setTargetSize(II)V
+
+    return-void
+.end method

@@ -1,0 +1,12 @@
+###### Class com.revenuecat.purchases.interfaces.LogInCallback (com.revenuecat.purchases.interfaces.LogInCallback)
+.class public interface abstract Lcom/revenuecat/purchases/interfaces/LogInCallback;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract onError(Lcom/revenuecat/purchases/PurchasesError;)V
+.end method
+
+.method public abstract onReceived(Lcom/revenuecat/purchases/CustomerInfo;Z)V
+.end method

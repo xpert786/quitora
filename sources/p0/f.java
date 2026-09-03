@@ -1,0 +1,8 @@
+package p0;
+
+/* JADX INFO: loaded from: classes.dex */
+public abstract class f {
+
+    /* JADX INFO: renamed from: a, reason: collision with root package name */
+    public static int f24632a = 2131820678;
+}

@@ -1,0 +1,20 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android)
+SHA1-Digest-Manifest: I6G2ZIArA/7xkCEhvzYT8j/jkVE=
+X-Android-APK-Signed: 2, 3
+
+Name: AndroidManifest.xml
+SHA1-Digest: UOd1q1Ryyuakf9S3snnjd5HEMNg=
+
+Name: lib/armeabi-v7a/libapp.so
+SHA1-Digest: B0dNdv/zY1lORLKoeTFRM9hOvCs=
+
+Name: lib/armeabi-v7a/libdatastore_shared_counter.so
+SHA1-Digest: Tev4gFTj640tNghI6BuW+48Ro18=
+
+Name: lib/armeabi-v7a/libflutter.so
+SHA1-Digest: 9VLzGbUHH6V1QYHlQbD31JC+EFI=
+
+Name: stamp-cert-sha256
+SHA1-Digest: Bs40BvDZ1xrbgQrPTD2x5w/NfHQ=
+

@@ -1,0 +1,173 @@
+###### Class H4.i (H4.i)
+.class public final LH4/i;
+.super LH4/v;
+.source "SourceFile"
+
+
+# static fields
+.field public static a:LH4/i;
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    .line 1
+    invoke-direct {p0}, LH4/v;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static declared-synchronized f()LH4/i;
+    .registers 2
+
+    .line 1
+    const-class v0, LH4/i;
+
+    .line 2
+    .line 3
+    monitor-enter v0
+
+    .line 4
+    :try_start_3
+    sget-object v1, LH4/i;->a:LH4/i;
+
+    .line 5
+    .line 6
+    if-nez v1, :cond_11
+
+    .line 7
+    .line 8
+    new-instance v1, LH4/i;
+
+    .line 9
+    .line 10
+    invoke-direct {v1}, LH4/i;-><init>()V
+
+    .line 11
+    .line 12
+    .line 13
+    sput-object v1, LH4/i;->a:LH4/i;
+
+    .line 14
+    .line 15
+    goto :goto_11
+
+    .line 16
+    :catchall_f
+    move-exception v1
+
+    .line 17
+    goto :goto_15
+
+    .line 18
+    :cond_11
+    :goto_11
+    sget-object v1, LH4/i;->a:LH4/i;
+    :try_end_13
+    .catchall {:try_start_3 .. :try_end_13} :catchall_f
+
+    .line 19
+    .line 20
+    monitor-exit v0
+
+    .line 21
+    return-object v1
+
+    .line 22
+    :goto_15
+    :try_start_15
+    monitor-exit v0
+    :try_end_16
+    .catchall {:try_start_15 .. :try_end_16} :catchall_f
+
+    .line 23
+    throw v1
+.end method
+
+
+# virtual methods
+.method public a()Ljava/lang/String;
+    .registers 2
+
+    .line 1
+    const-string v0, "com.google.firebase.perf.NetworkRequestSamplingRate"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public c()Ljava/lang/String;
+    .registers 2
+
+    .line 1
+    const-string v0, "fpr_vc_network_request_sampling_rate"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public d()Ljava/lang/Double;
+    .registers 3
+
+    .line 1
+    const-wide/high16 v0, 0x3ff0000000000000L    # 1.0
+
+    .line 2
+    .line 3
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public e()Ljava/lang/Double;
+    .registers 5
+
+    .line 1
+    invoke-virtual {p0}, LH4/i;->d()Ljava/lang/Double;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Ljava/lang/Double;->doubleValue()D
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-wide v0
+
+    .line 9
+    const-wide v2, 0x408f400000000000L    # 1000.0
+
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    div-double/2addr v0, v2
+
+    .line 15
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v0
+
+    .line 19
+    return-object v0
+.end method

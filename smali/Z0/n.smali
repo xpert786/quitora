@@ -1,0 +1,15 @@
+###### Class Z0.n (Z0.n)
+.class public abstract synthetic LZ0/n;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# direct methods
+.method public static bridge synthetic a(Landroid/graphics/BitmapFactory$Options;Landroid/graphics/ColorSpace;)V
+    .registers 2
+
+    .line 1
+    iput-object p1, p0, Landroid/graphics/BitmapFactory$Options;->outColorSpace:Landroid/graphics/ColorSpace;
+
+    return-void
+.end method

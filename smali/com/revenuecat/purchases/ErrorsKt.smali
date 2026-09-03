@@ -1,0 +1,4 @@
+###### Class com.revenuecat.purchases.ErrorsKt (com.revenuecat.purchases.ErrorsKt)
+.class public final Lcom/revenuecat/purchases/ErrorsKt;
+.super Ljava/lang/Object;
+.source "SourceFile"

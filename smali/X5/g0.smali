@@ -1,0 +1,18 @@
+###### Class X5.g0 (X5.g0)
+.class public abstract LX5/g0;
+.super Ljava/net/SocketAddress;
+.source "SourceFile"
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/net/SocketAddress;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method

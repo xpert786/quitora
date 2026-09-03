@@ -1,0 +1,9 @@
+###### Class com.google.android.gms.internal.measurement.zzpf (com.google.android.gms.internal.measurement.zzpf)
+.class public interface abstract Lcom/google/android/gms/internal/measurement/zzpf;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract zza()J
+.end method

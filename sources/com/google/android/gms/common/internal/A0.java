@@ -1,0 +1,37 @@
+package com.google.android.gms.common.internal;
+
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Parcel;
+import com.google.android.gms.internal.common.zzb;
+import com.google.android.gms.internal.common.zzc;
+import l3.InterfaceC2136a;
+
+/* JADX INFO: loaded from: classes.dex */
+public abstract class A0 extends zzb implements W {
+    public A0() {
+        super("com.google.android.gms.common.internal.ICertData");
+    }
+
+    public static W b(IBinder iBinder) {
+        IInterface iInterfaceQueryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.common.internal.ICertData");
+        return iInterfaceQueryLocalInterface instanceof W ? (W) iInterfaceQueryLocalInterface : new z0(iBinder);
+    }
+
+    @Override // com.google.android.gms.internal.common.zzb
+    public final boolean zza(int i7, Parcel parcel, Parcel parcel2, int i8) {
+        if (i7 == 1) {
+            InterfaceC2136a interfaceC2136aZzd = zzd();
+            parcel2.writeNoException();
+            zzc.zze(parcel2, interfaceC2136aZzd);
+        } else {
+            if (i7 != 2) {
+                return false;
+            }
+            int iZzc = zzc();
+            parcel2.writeNoException();
+            parcel2.writeInt(iZzc);
+        }
+        return true;
+    }
+}
